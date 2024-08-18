@@ -1,0 +1,369 @@
+body {
+  font-family: "Dosis", sans-serif; }
+
+/* Home Page Style */
+.ww-home-page {
+  background: url("../images/cover.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 70%;
+  height: 100vh;
+  min-height: 480px;
+  max-height: 1080px;
+  
+  /* Center the entire content of the home page */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+  .ww-home-page .ww-wedding-announcement {
+    text-align: center; /* Ensure text is centered */
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+    .ww-home-page .ww-wedding-announcement .ww-announcement-container {
+      max-width: 600px;
+      margin: 0 auto;}
+    .ww-home-page .ww-wedding-announcement img {
+      max-height: 350px;
+      width: auto; }
+      @media (max-width: 480px) {
+        .ww-home-page .ww-wedding-announcement img {
+          max-height: 250px;
+          width: auto; } }
+    .ww-home-page .ww-wedding-announcement .ww-couple-name {
+      font-size: 70px; }
+      @media (max-width: 576px) {
+        .ww-home-page .ww-wedding-announcement .ww-couple-name {
+          font-size: 50px; } }
+
+.ww-home-page:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  min-height: 480px;
+  max-height: 1080px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* Nav Bar Style */
+.ww-nav-bar .heart {
+  fill: #f26147;
+  position: relative;
+  top: 2px;
+  width: 40px;
+  -webkit-animation: pulse 1s ease infinite;
+          animation: pulse 1s ease infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+.ww-nav-bar .nav-item {
+  font-size: 18px;
+  padding: 5px 0 5px 16px;
+  font-weight: 500; }
+
+/* Wedding Event Style */
+.ww-wedding-event ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Couple Friends Style  */
+.ww-couple-friends .carousel {
+  padding: 40px 0; }
+
+.ww-couple-friends .carousel-indicators {
+  bottom: 0px; }
+  .ww-couple-friends .carousel-indicators li {
+    background-color: #6c757d; }
+  .ww-couple-friends .carousel-indicators .active {
+    background-color: #f58a77; }
+
+/* Photo Gallery Style */
+.ww-photo-gallery .ww-category-filter a {
+  font-family: 'Cinzel', serif;
+  margin: 0 15px 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.ww-photo-gallery .ww-gallery {
+  min-height: 500px; }
+
+.ww-photo-gallery .card-columns .card {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: none; }
+
+@media (max-width: 992px) {
+  .ww-photo-gallery .card-columns {
+    -moz-column-count: 2;
+         column-count: 2; } }
+
+@media (max-width: 576px) {
+  .ww-photo-gallery .card-columns {
+    -moz-column-count: 1;
+         column-count: 1; } }
+
+/* RSVP Style */
+.ww-rsvp-detail {
+  background: url("../images/rsvp-img.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative; }
+  .ww-rsvp-detail .ww-rsvp-form {
+    padding-left: 20%; }
+    @media (max-width: 768px) {
+      .ww-rsvp-detail .ww-rsvp-form {
+        padding-left: 10%; } }
+    @media (max-width: 576px) {
+      .ww-rsvp-detail .ww-rsvp-form {
+        padding-left: 0%; } }
+    .ww-rsvp-detail .ww-rsvp-form .form-control {
+      background-color: rgba(222, 222, 222, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.6); }
+    .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
+      color: #dedede; }
+    .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
+      color: #dedede; }
+    .ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
+      color: #dedede; }
+    .ww-rsvp-detail .ww-rsvp-form select.form-control option {
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff; }
+    .ww-rsvp-detail .ww-rsvp-form .btn-submit {
+      background-color: rgba(245, 138, 119, 0.8);
+      padding: 0.45rem 1.5rem;
+      border: 0; }
+
+.ww-rsvp-detail:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* Footer Style */
+.ww-footer a.credit {
+  color: inherit;
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Common Style */
+.ww-title {
+  font-family: "Great Vibes", cursive; }
+
+.ww-section {
+  padding: 100px 0; }
+
+.btn-primary {
+  color: #fff; }
+
+.btn-outline-primary:hover {
+  color: #fff; }
+
+#countdown {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.ww-wedding-event .h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ww-wedding-event ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ww-wedding-event img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ww-wedding-event .row {
+  margin-bottom: 40px;
+}
+
+.ww-photo-gallery .card-columns {
+  column-count: 2;
+}
+
+.ww-photo-gallery .card {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ww-photo-gallery .card-columns {
+    column-count: 1;
+  }
+}
+
+.ww-wedding-event .col-md-4 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .ww-wedding-event .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+.event-card {
+  background-color: #f5f7fa; /* Soft background color */
+  border: 1px solid #ced4da; /* Border similar to the image */
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish font for Wedding Event Titles */
+.event-title {
+  font-family: 'Cinzel', serif; /* Change font to Cinzel */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Center align the event title */
+  color: #000; /* Set title color to black for consistency */
+}
+
+.event-card hr {
+  border: none;
+  border-top: 1px solid #ced4da;
+  margin: 10px 0;
+}
+
+.event-time, .event-date, .event-location {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.event-time i, .event-date i, .event-location i {
+  margin-right: 10px;
+  color: #495057; /* Icon color */
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  .event-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Adjustments for animations in the invitation section */
+#invitationVideo {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add these animations to your CSS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+  opacity: 0; /* Keep it hidden after animation */
+}
+
+
+/* Ensure links in event section are black */
+.event-time a, .event-date a, .event-location a {
+  color: #000; /* Set link color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+.event-time a:hover, .event-date a:hover, .event-location a:hover {
+  color: #000; /* Ensure hover color stays black */
+  text-decoration: underline; /* Optional: add underline on hover for clarity */
+}
+
+
+/* Adjustments for the Wedding Wishes section */
+#wishes-carousel .carousel-inner {
+  height: 200px; /* Set a fixed height for the carousel container */
+  max-width: 700px; /* Set a fixed maximum width */
+  margin: 0 auto; /* Center the carousel */
+}
+
+#wishes-carousel .carousel-item {
+  text-align: center;
+  padding: 20px; /* Adjust padding as necessary */
+}
+
+#wishes-carousel img {
+  max-width: 150px;
+  margin: 0 auto 20px auto; /* Adds margin below the image */
+  border-radius: 50%;
+}
+
+#wishes-carousel h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  margin-bottom: 10px; /* Adds space below the name */
+}
+
+#wishes-carousel p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Adds space below the text */
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-top: 20px; /* Adjusts space above the progress bar */
+}
+
+.carousel-indicators li {
+  background-color: #f58a77; /* Customize the color */
+}
+
+.carousel-indicators .active {
+  background-color: #d9534f; /* Customize the color for the active indicator */
+}
