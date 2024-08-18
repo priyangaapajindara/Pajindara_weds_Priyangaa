@@ -326,7 +326,6 @@ body {
 
 /* Adjustments for the Wedding Wishes section */
 #wishes-carousel .carousel-inner {
-  height: 200px; /* Set a fixed height for the carousel container */
   max-width: 700px; /* Set a fixed maximum width */
   margin: 0 auto; /* Center the carousel */
 }
